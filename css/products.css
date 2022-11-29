@@ -1,0 +1,191 @@
+/* *{
+  border:solid red 1px;
+} */
+
+   h3{
+     font-size: 1.5rem;
+     font-family: 'Poppins';
+     text-align: center;
+   }
+   
+   body{
+       font-style: normal;
+   }
+   
+ 
+   input{
+     display: inline-block;
+     max-width:25rem;
+   }
+
+   button{
+     color:white;
+     background-color:#92532E ;
+     font-size: 1.5rem;
+   }
+   
+ 
+
+    .description{
+        display:grid;
+        grid-template-columns: 40% 40%;
+        justify-content: space-between;
+    }
+
+  
+
+    /*.form{
+      display:grid;
+      grid-template-columns: 40% 40%;
+      justify-content: space-between;
+      margin:0rem 15rem 5rem 15rem;
+  }*/
+
+    .images{
+      display:grid;
+      grid-template-rows: 40% 40%;
+      /*justify-content: space-between;*/
+  }
+
+    .left{
+      margin-left: 10rem;
+    }
+    .right{
+      margin-top:10rem;
+      margin-right:10rem;
+    }
+
+    .small_images{
+      padding-left:10rem;
+      margin-top:-5rem;
+      z-index: 2;
+    }
+
+    @media (min-width: 20rem){
+        .product{
+          grid-template-columns: 1fr;
+          margin: 4rem 2rem 0rem 2rem;
+        }
+        img{
+          width:80vw;
+          margin:auto;
+        }
+       }
+      
+       @media (min-width:40rem){
+        .product{
+          grid-template-columns: 1fr 1fr;
+          margin: 4rem 4rem 0rem 4rem;
+        }
+        img{
+          width:40vw;
+          margin:auto;
+        }
+       }
+      
+       @media (min-width: 64rem){
+        .product{
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          margin: 4rem 5rem 0rem 5rem;
+        }
+
+        .narrow{
+          margin:0rem 10rem;
+        }
+
+        .wide img{
+          width:20vw;
+          margin:auto;
+        }
+        .narrow img{
+          width:16vw;
+          margin:auto;
+        }
+        
+       }
+
+       
+       .product{
+        display: grid;
+        text-align:center;
+       
+      }
+     
+      .product a{
+        display:block;
+      }
+      
+      .product img{
+        padding:1em;
+        /* margin-top:-4rem; */
+      }
+      .pro:hover, .pro:focus{
+        opacity: 0.5;
+      }
+
+      .product a:hover, .product a:focus{
+        color:#92532E;
+        font-size: 1.2rem;
+      }
+
+
+      .product a{
+        margin-top: -2.5rem;
+      }
+
+      
+      .product a{
+        font-family: 'Poppins';
+        color:black;
+        text-align: center;
+        position:relative;
+        top:-2rem;
+        text-decoration: none;
+      }
+
+     
+
+      .product p{
+        position:relative;
+        top:-3rem;
+      }
+
+
+      label{
+        display:block;
+      }
+
+      .pay{
+        border-top: solid black 0.1rem ;
+        display:grid;
+        grid-template-columns: 15% 30%;
+        justify-content: space-between;
+        margin-left: 4rem;
+        margin-right: 4rem;
+      }
+
+      /* .pay_left{
+        align:left ;
+      } */
+
+      .pay_right{
+        text-align:right ;
+
+      }
+
+
+
+      img{
+        display: block;
+      }
+
+      .tea_bags a{
+        margin-top: 0.2rem;
+      }
+
+      .tea_equipment a{
+        margin-top: 0.1rem;
+      }
+
+    
+

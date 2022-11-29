@@ -1,0 +1,53 @@
+/*
+	.woff2 = super modern browsers 
+	.woff = fairly modern browsers
+*/
+/*
+https://www.fontsquirrel.com/fonts/poppins 
+https://www.fontsquirrel.com/fonts/montserrat for heading
+https://google-webfonts-helper.herokuapp.com/fonts/pt-sans?subsets=latin  for body
+
+*/
+/* Loading the 'regular' weight */
+@font-face {
+	font-family: 'PT-sans';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../font/pt-sans-v16-latin-regular.woff2') format('woff2'),
+		 url('../font/pt-sans-v16-latin-regular.woff') format('woff');
+}
+
+/* Loading the italic style for the 'regular' weight */
+@font-face {
+	font-family: 'Montserrat';
+	font-weight: normal;
+	font-style: italic;
+	src: url('../font/montserrat-italic-webfont.woff2') format('woff2'), 
+		 url('../font/montserrat-italic-webfont.woff') format('woff');
+}
+
+/* Loading the 'bold' weight */
+@font-face {
+	font-family: 'Montserrat';
+	font-weight: bold;
+	font-style: normal;
+	src: url('../font/montserrat-regular-webfont.woff2') format('woff2'), 
+		 url('../font/montserrat-regular-webfont.woff') format('woff');
+}
+
+/* Loading the normal style for the 'black' weight */
+@font-face {
+	font-family: 'Montserrat';
+	font-weight:800;
+	font-style: normal;
+	src: url('../font/montserrat-black-webfont.woff2') format('woff2'), 
+		 url('../font/montserrat-black-webfont.woff') format('woff');
+}
+@font-face {
+	font-family: 'Poppins';
+	font-weight:bold;
+	font-style:normal;
+	src: url('../font/poppins-bold-webfont.woff2') format('woff2'),
+		 url('../font/poppins-bold-webfont.woff') format('woff');
+
+}

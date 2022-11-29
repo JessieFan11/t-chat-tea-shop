@@ -1,0 +1,177 @@
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+
+
+/*
+	Setting the grid structure and its responsiveness up
+*/
+
+
+
+
+/*
+	A generic button class to make sure that all buttons follow a similar style and structure.
+*/
+
+.curent_page {
+  color:white !important;
+  text-decoration: none;
+
+}
+h1,h2,h3,h4,h5{
+  color:#3A2E27;
+  font-family: Poppins, Montserrat, Verdana, sans-serif;
+}
+
+
+
+.fa {
+	font-size: 1.5rem;
+}
+.nav-main .fa{
+  color:#241B15 !important;
+}
+.nav-main .icon {
+  display: none;
+  float: right;
+}
+
+
+
+.nav-main .icon-index {
+  display: none;
+}
+
+.dropdown {
+    overflow:hidden;
+    float:left;
+  }
+
+.dropdown .fa {
+    color:#241B15;
+    position:absolute;
+    margin-left:-0.8rem;
+}
+a {
+  text-decoration: none;
+  color: #92532E;
+}
+.dropdown-content {
+    display:block;
+    position: absolute;
+    padding-top: 1rem;
+    background-color: #BE9349;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color:white;
+    padding: 0.7rem 1rem;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    color:white;
+    background-color: rgba(32, 32, 32, 0.479);
+  }
+  
+  .dropdown:hover .dropdown-content .dropdown:focus .dropdown-content{
+    display: block;
+  }
+
+  .display-on-celphone {
+    display:none;
+}
+@media screen and (max-width: 48rem){
+    .nav-main a{
+      opacity: 0;
+    }
+    .dropdown {
+      display:none;
+    }
+    .display-on-celphone {
+      display: block;
+    }
+    .nav-main a.icon {
+      opacity: 1;
+      right: 0;
+      font-size: 1.5rem;
+      position: absolute;
+      margin-top: -0.2rem;
+      display: block;
+  }
+     /* Hamburger Icon Visible */
+     .nav-main a.icon-index {
+      opacity: 1;
+      right: 0;
+      font-size: 1.5rem;
+      position: absolute;
+      margin-top: -0.2rem;
+      display: block;
+  }
+
+  /* Links collapse down */
+  .nav-main.responsive {
+      position: relative;
+      padding-top: 2rem;
+      padding-bottom: 0.5rem;
+  }
+  /* Make Mobile ver links Visible */
+  .nav-main.responsive a {
+      opacity: 1;
+  }
+
+  /* Make active link bold */
+  .nav-main.responsive .active {
+      font-weight: 900;
+  }
+  /* Adjust hamburger icon placement */
+  .nav-main.responsive .icon {
+      position: absolute;
+      margin-top: -12rem;
+  }
+  /* Links for mobile nav composition */
+  .nav-main.responsive a {
+      float: none;
+      padding-bottom: 2rem;
+      display: block;
+      text-align: left;
+  }
+}
+
+
+footer{
+  background-color: #BE9349;
+  padding-top:1rem;
+  padding-bottom:1rem;
+  padding-left:1rem;
+  max-width:120rem;
+}
+
+
+
+
+.curent_page{
+  color:white;
+  text-decoration: none;
+}
+/*
+  .home-btn>a:after {
+    content: " +";
+  }
+
+
+
+
+/*
+	Here we have added a simple class that will allow us to toggle the visibility of an element on (or off) for the purposes of showing and hiding our menu.
+*/
+
+
+

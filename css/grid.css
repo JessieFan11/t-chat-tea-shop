@@ -1,0 +1,132 @@
+/*Grids.css*/
+* {
+    box-sizing: border-box;
+}
+.grid {
+    display: grid;
+
+}
+/* 650/16 = 42.4375*/
+
+
+
+@media (min-width: 40rem){
+    .grid.three-column {
+        grid-template-columns:1fr;
+    }
+    .shopping-cart-item {
+        height: auto;
+        display: inline-flexbox;
+      }
+    .checkout-div-container {
+        margin-left: -1rem;
+    }
+
+}
+@media (min-width: 75rem){
+    .grid.three-column {
+        grid-template-columns: 2fr 1fr;
+       
+    }
+    .shopping-cart-item {
+        height: auto;
+        display: flex;
+      }
+
+}
+
+
+
+@media (min-width: 20rem){
+    .grid.two-column {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (min-width: 40rem) {
+    .grid.two-column {
+        grid-template-columns: 1fr 2fr;
+    }
+
+}
+
+@media (min-width: 75rem) {
+    .grid.two-column {
+        grid-template-columns: 1fr 3fr;
+    }
+}
+
+@media (min-width: 20rem){
+    .grid.two-column-reverse{
+        grid-template-columns: 1fr;
+        flex-wrap: wrap;
+    }
+     p {
+        order: 1;
+    }
+    .image {
+        order: 2;
+    }
+
+}
+@media (min-width: 40rem) {
+    .grid.two-column-reverse{
+        grid-template-columns: 2fr 1fr;
+    }
+    .image-tbag {
+        order:-1;
+    }
+}
+
+
+@media (min-width: 75rem) {
+    .grid.two-column-reverse{
+        grid-template-columns: 3fr 1fr;
+
+    }
+}
+
+@media (min-width: 40rem){
+    .grid.contact-grid {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+    .grid.contact-grid-inner {
+        grid-template-columns: 1fr ;
+    }
+}
+
+
+@media (min-width: 75rem){
+    .grid.contact-grid {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+    .grid.contact-grid-inner {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (min-width: 20rem){
+    .grid.shopping-cart-item{
+        grid-template-columns: 1fr;
+    }
+    .shopping-cart-description p {
+        float:left;
+        width:10rem;
+    }
+}
+@media (min-width: 40rem){
+    .grid.shopping-cart-item{
+        grid-template-columns: 1fr 1fr;
+    }
+    .shopping-cart-description p {
+        width:20rem;
+    }
+}
+
+@media (min-width: 20rem) {
+    .grid.order-summary{
+        grid-template-columns: 2fr 1fr;
+    }
+}

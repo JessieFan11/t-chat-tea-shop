@@ -1,0 +1,306 @@
+/*
+selector{
+    property: value;
+    property2: valueX;
+}
+*/
+
+/* s */
+
+section {
+    padding: 0.15rem 1rem;
+    text-align: left;
+}
+body {
+    font-family: PT-sans, poppins, Montserrat, Verdana, sans-serif;
+    /*margin: 1rem;*/
+    max-width: 120rem;
+    min-width:20rem;
+    margin:0;
+    padding:0;
+}
+
+h2 {
+    /*font-size: 2.25rem;*/
+    text-align: center;
+}
+h3 {
+    /* border-top: 0.15rem solid #241B15; */
+    padding-top: 1rem;
+    font-size: 1.2rem;
+}
+
+
+ul{
+    max-width: 40rem;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align:left;
+}
+
+a:hover, a:focus{
+    color:#BE9349;
+    text-decoration: none;
+
+}
+p{
+    display:flex;
+    margin: auto;
+    max-width: 40rem;
+    margin-bottom:1rem;
+}
+
+p a:visited { 
+    color: darkblue;
+    text-decoration: underline;
+  }
+
+
+  
+img {
+    height: auto;
+    max-width: 100%;
+    /* margin-top:2rem; */
+}
+
+
+
+input {
+    /* display: block; */
+    margin-bottom: 1rem;
+    /* align-content: center; */
+
+}
+.input-width {
+    min-width: 18rem;
+}
+textarea{
+    /*display:inline-block;*/
+    min-height: 5rem;
+    max-width: 40rem;
+}
+label{
+    display:block;
+    margin-top:0.5rem;
+    text-align: left;
+    /* font-weight:700; */
+    margin-bottom: 0.5rem;
+}
+
+
+input[type="submit"] {
+    display: flex;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 0.5rem 0.5rem;
+    background: #BE9349;
+    border: 0.15rem solid #BE9349;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    text-align: center;
+    font-size: 1rem;
+}
+input[type="submit"]:hover, input[type="submit"]:focus {
+
+    background: #92532E;
+    border-color:#92532E;
+    color: white;
+}
+
+/* homepage text, buttons and image start */
+.shop {
+    display:block;
+    padding-left:0rem;
+    /* align-content:left; */
+    margin: auto;
+
+}
+
+
+#home img {
+    min-width: 350px;
+    padding-right: 1rem;
+}
+.image{
+    position:relative;
+    background-repeat: no-repeat;
+    /* max-width: 970px; */
+    margin-top: 1.5rem;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/background-position */
+/* https://www.quirksmode.org/css/units-values/viewport.html */
+.image-looseT{
+    background-image: url(../img/loose-leaf-tea.jpg);
+    background-position-y: 2%;
+    background-repeat: no-repeat;
+    height:40vw;
+   
+    background-size: cover;
+    /* padding-right: -2rem; */
+
+}
+.image-tbag{
+    background-image: url(../img/tea-bags.jpg);
+    background-position-y: 10%;
+    height:40vw;
+    background-size: cover;
+
+}
+.image-tware{
+    background-image: url(../img/teaware.jpg);
+    background-position-x: right;
+    height:40vw;
+    background-size: cover;
+}
+
+.text_left{
+    text-align: flex;
+    display:block;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    width:15rem;
+    padding:0.25rem 0.75rem;
+    /* padding-right: 1.5rem; */
+    margin-bottom: 2rem;
+    font-size:1rem;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/white-space */
+.text_right{
+    text-align: flex;
+    display:block;
+    /* float:inline-end; */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    width:15rem;
+    padding:0.25rem 0.75rem;
+    margin-bottom: 2rem;
+    font-size:1rem;
+}
+
+/* homepage text, buttons and image end */
+
+
+.overlay{
+    position:relative;
+    height:100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right:0;
+    transition: .5s ease;
+    /* background: #DEDBD7; */
+    opacity:0;
+}
+.overlay:hover, .overlay:focus{ 
+    opacity: 0.5;
+}
+.product-overlay{
+    position:absolute;
+    display:inline-block;
+    height:100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right:0;
+    transition: .5s ease;
+    background: #DEDBD7;
+    opacity:0;
+}
+.product-overlay:hover,.product-overlay:focus{
+    opacity: 0.5;
+}
+
+  /* shopping cart start*/
+
+.cart {
+    max-width:120rem;
+    min-width:20rem;
+    padding-right: 2rem;
+}
+.checkout-container { 
+
+    margin-top:1rem;
+    margin-bottom:4rem;
+    font-size:0.8rem;
+}
+
+.shopping-cart {
+    width: 100%;
+    background: #FFFFFF;
+    display: flex;
+    color:black;
+    flex-direction: column;
+  }
+
+   
+   
+  .shopping-cart-image {
+    padding-right:1em;
+    min-width:300px;
+    margin-bottom: -4rem;
+  }
+   
+  .shopping-cart-description {
+    padding-top: 1rem;
+    margin-right: 2rem;
+    padding-left: 5rem;
+
+  }
+
+  .quantity {
+    width:12em;
+    padding-top: 20px;
+    padding-right:1rem;
+  }
+
+  .quantity input {
+    font-family:sans-serif;
+    /* border: none; */
+    text-align: center;
+    width: 1.2 rem;
+    font-size: 16px;
+    color: black;
+    font-weight: 300;
+  }
+  
+  .quantity input:hover,.quantity input:focus {
+    outline: 2px solid black;
+  }     
+
+  .item-price {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+.order-summary-container{
+    margin-top:3rem;
+    text-transform:none;
+    padding-left:2rem;
+    padding-right:2rem;
+    padding-bottom: 8.5rem;
+    background:#DEDBD7;
+    max-width: 40rem;
+    margin:auto;
+}
+
+.order-summary {
+    text-align: center;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+.alignleft {
+    text-align: left;
+    font-size:1.2em;
+}
+.number-right {
+    text-align: right;
+    font-size:1.2em;
+}
+.btn-checkout {
+    margin-top:4rem;
+}
+  /*shopping cart end*/
