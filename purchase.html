@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>T-Chat purchase Page</title>
+  <link rel="stylesheet" href="css/purchase.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/public.css">
+</head>
+
+<body>
+  <header>
+    <nav class="nav-main">
+      <h1>T-Chat Tea</h1>
+      <div class="grid navi-grids">
+        <div></div>
+        <div></div>
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="products.html" class="nav-item ">Product</a>
+        <a href="cart.html" class="nav-item curent_page">Cart</a>
+        <a href="contact.html" class="nav-item">Contact</a>
+      </div>
+
+    </nav>
+
+  </header>
+  <section class="sum">
+    <h2>Order Summary</h2>
+    <div class="summary">
+      <div class="img">
+        <img src="img/cart-ooling.jpg" alt="a cup of oolong tea" width=100>
+      </div>
+      <div class="name">
+        <p>Oolong loose leaf with floral and exotic fruit</p>
+      </div>
+      <div class="qty">
+        <p>1</p>
+      </div>
+      <div class="price">
+        <p>$ 12.99</p>
+      </div>
+
+
+    </div>
+    <div class="summary">
+      <div class="img">
+        <img src="img/cart-teacup.jpg" alt="a glass tea" width=100>
+      </div>
+
+      <div class="name">
+        <p>Nova double-walled mug</p>
+      </div>
+
+      <div class="qty">
+        <p>1</p>
+      </div>
+      <div class="price">
+        <p>$ 24.00</p>
+      </div>
+
+    </div>
+    <p class="pay">Total: CAD:44.99</p>
+  </section>
+
+
+
+  <h2>Shipping Details</h2>
+  <form method="post" action="#" class="grid contact-grid">
+    <div></div>
+    <div class="grid contact-grid-inner">
+      <div>
+        <label for="first-name">First Name:</label>
+      </div>
+      <div>
+        <input type="text" placeholder="Frist name" id="first-name">
+      </div>
+      <div>
+        <label for="last-name">Last Name:</label>
+      </div>
+      <div>
+        <input type="text" placeholder="Last name" id="last-name">
+      </div>
+
+      <div>
+        <label for="adress">Adress:</label>
+      </div>
+      <div>
+        <input type="text" placeholder="Enter your address" id="adress">
+      </div>
+
+      <div>
+        <label for="adress2">Address 2:</label>
+      </div>
+      <div>
+        <input type="text" placeholder="Optional" id="adress2" >
+      </div>
+
+      <div>
+        <label for="postal">Postal Code:</label>
+      </div>
+      <div>
+        <input class="short_width" type="text" placeholder="A1A 1A1" id="postal" >
+      </div>
+
+      <div>
+        <label for="city">City:</label>
+      </div>
+      <div>
+        <input type="text" placeholder="Enter your City" id="city">
+      </div>
+
+      <div>
+        <label for="province">Province:</label>
+      </div>
+      <div>
+        <input type="text" placeholder="Enter your Provice" id="province">
+      </div>
+
+      <div>
+        <label for="phone">Phone:</label>
+      </div>
+      <div>
+        <input type="text" placeholder="1-234-567-8900" id="phone"> 
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+      </div>
+      <div>
+        <input type="text" placeholder="123456@abd.com" id="email">
+      </div>
+    </div>
+    <div></div>
+  </form>
+
+
+  <h2>Payment</h2>
+
+  <form method="post" action="#" class="grid contact-grid">
+    <div></div>
+    <div class="grid contact-grid-inner">
+      <div>
+        <label for="card">Card Number:</label>
+      </div>
+      <div>
+        <input type="text" placeholder="xxxx xxxx xxxx xxxx" id="card">
+      </div>
+      <div>
+        <label for="cardholder">Cardholder Name:</label>
+      </div>
+      <div>
+        <input type="text" placeholder="Joe Smith" id="cardholder">
+      </div>
+      <div>
+        <label  for="month" >Month:</label>
+      </div>
+      <div>
+        <input class="short_width" type="number" name="year" min="1" max="12" placeholder="01" id="month">
+      </div>
+      <div>
+        <label for="year">Year:</label>
+      </div>
+      <div>
+        <input class="short_width" type="number" name="year" min="1900" max="2022" placeholder="1999" id="year">
+      </div>
+
+      <div>
+        <label for="cvv"> CVV:</label>
+      </div>
+      <div>
+        <input class="short_width" type="text" placeholder="123" id="cvv">
+      </div>
+    </div>
+    <div></div>
+  </form>
+
+  <div class="pay">
+    <a href="purchase_confirmation.html" class="btn-style">FINISH AND PAY</a>
+
+  </div>
+
+
+  <footer>
+      <p>T-chat Tea Company Ltd. Copyright & Trademark Notices @ 2022. All rights are reserved.</p>
+      <a href="https://github.sfu.ca/jfa79/group6_repository_p2-w2">Github Repository</a>
+    </footer>
+
+</body>
+
+</html>
